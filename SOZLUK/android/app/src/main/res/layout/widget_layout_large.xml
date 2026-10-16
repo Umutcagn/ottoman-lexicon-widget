@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/widget_background"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Top Header: Badge + Ottoman Hat -->
+    <TextView
+        android:id="@+id/widget_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ottoman Dict"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        android:textColor="#AAFFFFFF"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/widget_ottoman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حزن"
+        android:textSize="26sp"
+        android:textColor="#FFB300"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/widget_tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hüzün"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/widget_badge"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/widget_ottoman"
+        android:layout_marginTop="2dp" />
+
+    <!-- Section 1: Meaning -->
+    <TextView
+        android:id="@+id/widget_meaning_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANLAMI"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        android:textColor="#FFB300"
+        android:layout_below="@id/widget_ottoman"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/widget_meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İç sıkıntısı, gam; tatlı bir kederle karışık derin üzüntü."
+        android:textSize="10sp"
+        android:textColor="#DDFFFFFF"
+        android:layout_below="@id/widget_meaning_label"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="1dp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <!-- Section 2: Example Quote -->
+    <TextView
+        android:id="@+id/widget_example_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ÖRNEK"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        android:textColor="#FFB300"
+        android:layout_below="@id/widget_meaning"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/widget_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="“Akşamın hüznü çöktü şehrin damlarına.”"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        android:textColor="#BBFFFFFF"
+        android:layout_below="@id/widget_example_label"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="1dp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+</RelativeLayout>

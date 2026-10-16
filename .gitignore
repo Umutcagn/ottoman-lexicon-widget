@@ -1,0 +1,36 @@
+# ── CRITICAL SECURITY GUARDRAILS ──
+release-key.jks
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.pem
+*.env
+*.env.*
+*.env.local
+*secret*
+*token*
+*credential*
+google-services.json
+
+# ── Dependencies ──
+**/node_modules/
+**/.pnpm-store/
+
+# ── Build Outputs ──
+**/.next/
+**/out/
+**/build/
+**/dist/
+**/android/app/build/
+**/android/.gradle/
+**/android/build/
+**/android/captures/
+
+# ── Editor & OS ──
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log

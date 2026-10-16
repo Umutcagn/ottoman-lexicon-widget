@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="@drawable/widget_item_background">
+
+    <!-- Turkish Word -->
+    <TextView
+        android:id="@+id/widget_tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelime"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Ottoman Calligraphy (Right aligned) -->
+    <TextView
+        android:id="@+id/widget_ottoman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لغت"
+        android:textSize="20sp"
+        android:textColor="#FFB300"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right" />
+
+    <!-- Definition / Meaning -->
+    <TextView
+        android:id="@+id/widget_meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kelime anlamı buraya gelecek."
+        android:textSize="11sp"
+        android:textColor="#CCCCCC"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_below="@id/widget_tr"
+        android:layout_marginTop="6dp" />
+
+</RelativeLayout>

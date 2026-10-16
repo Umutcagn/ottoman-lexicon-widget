@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Ottoman Dict</string>
+    <string name="title_activity_main">Ottoman Dict</string>
+    <string name="package_name">com.ottomandict.app</string>
+    <string name="custom_url_scheme">com.ottomandict.app</string>
+</resources>

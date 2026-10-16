@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp"
+    android:background="@drawable/widget_background"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Ottoman Calligraphy (Top Right) -->
+    <TextView
+        android:id="@+id/widget_ottoman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حزن"
+        android:textSize="32sp"
+        android:textColor="#FFB300"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Top Left Badge -->
+    <TextView
+        android:id="@+id/widget_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Günün Kelimesi"
+        android:textSize="10sp"
+        android:textColor="#AAFFFFFF"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Turkish Word (Below Badge) -->
+    <TextView
+        android:id="@+id/widget_tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hüzün"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/widget_badge"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/widget_ottoman"
+        android:layout_marginTop="4dp" />
+
+    <!-- Meaning (Below Turkish Word) -->
+    <TextView
+        android:id="@+id/widget_meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İç sıkıntısı, gam; tatlı bir kederle karışık derin üzüntü."
+        android:textSize="12sp"
+        android:textColor="#CCCCCC"
+        android:layout_below="@id/widget_tr"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="6dp"
+        android:maxLines="3"
+        android:ellipsize="end" />
+
+</RelativeLayout>
