@@ -82,3 +82,9 @@ pnpm build
 npx cap sync android
 npx cap open android
 ```
+
+---
+
+## License
+
+© 2026 Umutcan Kırımlı. All rights reserved. The source code is published for viewing as part of a portfolio; copying, redistribution or use in other apps requires written permission.
